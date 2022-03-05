@@ -1,0 +1,38 @@
+{
+  "orchestrator:component": "orchestrator:background",
+  "props": {
+    "style":{
+      "background": "#3f3f3f"
+    }
+  },
+  "child": [
+    {
+      "orchestrator:component": "orchestrator:div",
+      "props": {
+        "style":{
+          "padding": 40
+        }
+      },
+      "children": [{
+        "orchestrator:component": "orchestrator:h1",
+        "props": {
+          "style": {
+            "color": "#AAA",
+            "fontSize": 32
+          }
+        },
+        "child": "Server Driven-UI"
+      },
+      {
+        "orchestrator:component": "orchestrator:paragraph",
+        "props": {
+          "style": {
+            "color": "#AAA",
+            "fontSize": 32
+          }
+        },
+        "child": "É quando a API informa ao cliente quais componentes renderizar e com qual conteúdo. Isso pode ser implementado nas três principais plataformas: Android, iOS e Web. \n E ai que entra a evolução, finalmente saiu uma biblioteca open source que vai ajudar a gente a aplicar esse conceito de uma forma padronizada entre as plataformas."
+      }]
+    }
+  ]
+}

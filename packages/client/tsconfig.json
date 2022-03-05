@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "module": "es2015",
+    "target": "es6",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "removeComments": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "dist",
+    "jsx": "react",
+    "declaration": true
+  },
+  "include": ["src"]
+}
