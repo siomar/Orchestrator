@@ -7,6 +7,7 @@ const OrchestratorConfig = {
   "orchestrator:text": "span",
   "orchestrator:h1": "h1",
   "orchestrator:paragraph": "p",
+  "orchestrator:button": "button",
 };
 
 export default OrchestratorConfig;

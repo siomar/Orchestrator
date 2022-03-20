@@ -8,13 +8,18 @@
   "workspaces": {
     "nohoist": [
       "react",
-      "react/**"
+      "react/**",
+      "styled-components",
+      "styled-components/**"
     ]
   },
   "dependencies": {
-    "react": "^17.0.2"
+    "react": "^17.0.2",
+    "styled-components": "^5.3.3"
   },
   "devDependencies": {
-    "@types/react": "^17.0.39"
+    "@types/react": "^17.0.39",
+    "@types/styled-components": "^5.1.21",
+    "@types/styled-components-react-native": "^5.1.3"
   }
 }

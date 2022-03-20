@@ -1,1 +1,5 @@
 node_modules
+
+packages/client/dist
+
+.DS_Store

@@ -9,7 +9,8 @@
     "forceConsistentCasingInFileNames": true,
     "outDir": "dist",
     "jsx": "react",
-    "declaration": true
+    "declaration": true,
+    "moduleResolution": "Node",
   },
   "include": ["src"]
 }

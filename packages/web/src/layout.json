@@ -2,7 +2,11 @@
   "orchestrator:component": "orchestrator:background",
   "props": {
     "style":{
-      "background": "#3f3f3f"
+      "width": "100vw",
+      "height": "100vh",
+      "display": "flex",
+      "justifyContent": "center",
+      "alignItens": "center"
     }
   },
   "child": [
@@ -10,7 +14,9 @@
       "orchestrator:component": "orchestrator:div",
       "props": {
         "style":{
-          "padding": 40
+          "padding": 40,
+          "width": 440
+
         }
       },
       "children": [{
@@ -18,20 +24,59 @@
         "props": {
           "style": {
             "color": "#AAA",
-            "fontSize": 32
+            "fontSize": 24,
+            "textAlign": "center"
           }
         },
         "child": "Server Driven-UI"
       },
       {
-        "orchestrator:component": "orchestrator:paragraph",
+        "orchestrator:component": "orchestrator:div",
         "props": {
-          "style": {
-            "color": "#AAA",
-            "fontSize": 32
+          "style":{
+            "padding": 10
           }
         },
-        "child": "É quando a API informa ao cliente quais componentes renderizar e com qual conteúdo. Isso pode ser implementado nas três principais plataformas: Android, iOS e Web. \n E ai que entra a evolução, finalmente saiu uma biblioteca open source que vai ajudar a gente a aplicar esse conceito de uma forma padronizada entre as plataformas."
+        "children":[{
+          "orchestrator:component": "orchestrator:paragraph",
+          "props": {
+            "onClick": "alert()",
+            "style": {
+              "color": "#AAA",
+              "fontSize": 16,
+              "textAlign": "center",
+              "lineHeight": 1.5
+            }
+          },
+          "child": "É quando a API informa ao cliente quais componentes renderizar e com qual conteúdo. Isso pode ser implementado nas três principais plataformas: Android, iOS e Web. \n E ai que entra a evolução, finalmente saiu uma biblioteca open source que vai ajudar a gente a aplicar esse conceito de uma forma padronizada entre as plataformas."
+        },{
+          "orchestrator:component": "orchestrator:button",
+          "props": {
+            "type": "button",
+            "style": {
+              "width": "100%",
+              "borderRadius":"10px",
+              "background":"#6b3bf4",
+              "border":"none",
+              "padding": 18
+            }
+          },
+          "children":[
+            {
+              "orchestrator:component": "orchestrator:paragraph",
+              "props": {
+                "style": {
+                  "color": "#fff",
+                  "fontSize": 16,
+                  "textAlign": "center",
+                  "lineHeight": 1.5,
+                  "margin":"0rem"
+                }
+              },
+              "child": "Repositório"
+            }
+          ]
+        }]
       }]
     }
   ]

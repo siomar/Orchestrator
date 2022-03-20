@@ -10,6 +10,7 @@ import { Orchestrator } from "@orchestrator/client";
 ReactDOM.render(
   <React.StrictMode>
      <Orchestrator response={layout} components={OrchestratorConfig} />
+     <h1></h1>
   </React.StrictMode>,
   document.getElementById('root')
 )

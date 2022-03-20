@@ -13,5 +13,5 @@ interface IProps {
     components: IOrchestratorConfig;
     refresh?: boolean;
 }
-export declare const Orchestrator: ({ response, components, refresh, }: IProps) => JSX.Element;
+export declare const Orchestrator: ({ response, components, refresh, }: IProps) => any;
 export {};
